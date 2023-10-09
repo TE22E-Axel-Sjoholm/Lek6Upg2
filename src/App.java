@@ -4,7 +4,7 @@ public class App {
         Scanner tb = new Scanner(System.in);
 
         System.out.println("Vilket number ska avrundas? ");
-        
+
         int avrunda = tb.nextInt();
         int modulo = avrunda % 100;
 
@@ -34,5 +34,7 @@ public class App {
         float sekundersumma = (((timmar*60)*60)+(minuter*60)+sekunder);
 
         System.out.print("Tidsomvandlingen ger: "+timmarsumma+"h = "+minutersumma+"m = "+sekundersumma+"s");
+
+        tb.close();
     }
 }

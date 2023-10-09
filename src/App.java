@@ -15,5 +15,15 @@ public class App {
         int helTal = täljare / nämnare;
         int rest = täljare % nämnare;
         System.out.println("Blandad form: " + helTal + " " + rest + "/" + nämnare);
+        System.out.print("Ange antalet timmar: ");
+        float timmar = tb.nextFloat();
+        System.out.print("Ange antalet minuter: ");
+        float minuter = tb.nextFloat();
+        System.out.print("Ange antalet sekunder: ");
+        float sekunder = tb.nextFloat();
+        float timmarsumma = ((minuter/60)+((sekunder/60)/60)+timmar);
+        float minutersumma = ((timmar*60)+(sekunder/60)+minuter);
+        float sekundersumma = (((timmar*60)*60)+(minuter*60)+sekunder);
+        System.out.print("Tidsomvandlingen ger: "+timmarsumma+"h = "+minutersumma+"m = "+sekundersumma+"s");
     }
 }

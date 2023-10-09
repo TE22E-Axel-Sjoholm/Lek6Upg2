@@ -8,5 +8,12 @@ public class App {
         modulo = 100-modulo;
         avrunda += modulo;
         System.out.println("Det avrundas till "+avrunda);
+        System.out.print("Skriv en täljare: ");
+        int täljare = tb.nextInt();
+        System.out.print("Skriv en nämnare: ");
+        int nämnare = tb.nextInt();
+        int helTal = täljare / nämnare;
+        int rest = täljare % nämnare;
+        System.out.println("Blandad form: " + helTal + " " + rest + "/" + nämnare);
     }
 }
